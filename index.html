@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Bill Reduction Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+ <div class="top-bar">
+    <img src="تصميم بدون عنوان.png" alt="Right Logo" class="logo">
+
+  <div class="header-title">Power Quality Assurance System</div>
+      <img src="شعار الجامعة ابيض.PNG" alt="Left Logo" class="logo">
+
+</div>
+
+
+
+  <div class="container">
+    <h1>Bill Reduction Calculator</h1>
+    <div class="calculator">
+      <div class="inputs">
+        <h2>Inputs</h2>
+        <form id="inputsForm">
+          <!-- Updated Input Labels -->
+          <label for="D5">Energy (kWh)</label>
+          <input type="number" id="D5" step="any" />
+
+          <label for="D6">Power Factor (Old)</label>
+          <input type="number" id="D6" step="any" />
+
+          <label for="D7">Power Factor (New)</label>
+          <input type="number" id="D7" step="any" />
+
+          <label for="D8">Total Harmonic Distortion (Old)</label>
+          <input type="number" id="D8" step="any" />
+
+          <label for="D9">Total Harmonic Distortion (New)</label>
+          <input type="number" id="D9" step="any" />
+
+          <label for="D10">Energy Rate (SAR/kWh)</label>
+          <input type="number" id="D10" step="any" />
+
+          <label for="D11">Penalty Rate (SAR/kVArh)</label>
+          <input type="number" id="D11" step="any" />
+
+          <label for="D12">Allowed Reactive Ratio</label>
+          <input type="number" id="D12" step="any" />
+
+          <label for="D13">Demand Billed Apparent Power (kVA)</label>
+          <input type="number" id="D13" step="any" />
+
+          <label for="D14">Demand Rate (SAR/kVA)</label>
+          <input type="number" id="D14" step="any" />
+
+          <label for="D15">Peak Power (kW)</label>
+          <input type="number" id="D15" step="any" />
+
+          <label for="D16">Average Reactive Power Compensation (kVAr)</label>
+          <input type="number" id="D16" step="any" />
+
+          <label for="D17">Power Loss (W per kVAr)</label>
+          <input type="number" id="D17" step="any" />
+
+          <label for="D18">Shunt Active Power Filter Loss (kW)</label>
+          <input type="number" id="D18" step="any" />
+
+          <label for="D19">Fraction of Base System Losses</label>
+          <input type="number" id="D19" step="any" />
+
+          <label for="D20">Operating Hours</label>
+          <input type="number" id="D20" step="any" />
+
+          <label for="D21">CAPEX (SAR)</label>
+          <input type="number" id="D21" step="any" />
+
+          <button type="button" id="calcBtn">Calculate</button>
+        </form>
+      </div>
+
+      <div class="outputs">
+        <h2>Outputs</h2>
+        <div id="results"></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
